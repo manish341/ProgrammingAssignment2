@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Coursera - R Programing
+## Week 3 - Assignment 2
+## Lexical Scoping - Cache Matrix
 
-## Write a short comment describing this function
+## The function "makeCacheMatrix()" here creates cache-able matrices, 
+##  we can cache matrix inverse and retrieve the same when needed without
+##  calculating it again if the matrix has not changed.
 
 makeCacheMatrix <- function(x = matrix()) {
 	i <- NULL
@@ -18,7 +21,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## The function "cacheSolve()" is used to cache the matrix inverse of
+## matrices created using the "makeCacheMatrix()" function.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
